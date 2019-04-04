@@ -7,12 +7,11 @@
 
 - Programma "tabelline.py": Programma che stampa la Tavola Pitagorica da "0" a "12".
 
-NON COMPLETO
-
 '''
 
 print("TAVOLA PITAGORICA DA \"0\" A \"12\"\n\n")
 
-for v in range(0, 12):
-	for o in range (0, 12):
-		print("%(o*v)","\t")
+for v in range(0, 12+1):
+	for o in range (0, 12+1):
+		print('%10d'%(v*o,),end='')
+	print(' ')
